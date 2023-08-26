@@ -22,8 +22,8 @@ export const useProjectsStore = defineStore('projects', () => {
       url += `page=${page.value}`;
     }
     if (projectsCache.value.has(url)) {
-      projects.value = projectsCache.value.get(url)!.results;
-      count.value = projectsCache.value.get(url)!.count;
+      projects.value = projectsCache.value.get(url).results;
+      count.value = projectsCache.value.get(url).count;
       return;
     }
     try {

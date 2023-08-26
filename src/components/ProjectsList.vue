@@ -56,7 +56,7 @@ onMounted(() => {
     <div v-if="isLoading" class="flex justify-center items-center my-3">
       <div class="animate-spin rounded-full h-10 w-10 border-t-2 border-gray-500" />
     </div>
-    <div v-else-if="projects.length === 0">Проекты не найдены</div>
+    <div v-else-if="projects && projects.length === 0">Проекты не найдены</div>
     <ul v-else class="flex flex-col items-center">
       <li
         v-for="project in projects"
@@ -112,5 +112,3 @@ onMounted(() => {
     </div>
   </div>
 </template>
-
-<style scoped></style>

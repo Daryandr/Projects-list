@@ -11,7 +11,3 @@ import ProjectsList from "@/components/ProjectsList.vue";
     <ProjectsList/>
   </main>
 </template>
-
-<style scoped>
-
-</style>
